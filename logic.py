@@ -1,5 +1,6 @@
 from data import items, prices
 
+
 def shop():
     # 2. Ввод данных (Оператор вводит только количество)
     val_phys = int(input(f"Сколько нужно {items[0]}: "))
@@ -22,5 +23,12 @@ def shop():
         debt = total_cost - total_cash
         print(f"Недостаточно средств. Вы должны: {debt}")
 
-def mod_shop():
-    pass  # Заглушка, чтобы программа не падала
+def mod_lists():
+    print("\n=== Редактирование товаров ===")
+    for item in items: print(item)
+    input("Заменить: ")
+
+def mod_prices():
+    print("\n=== Редактирование товаров ===")
+    for item in items: print(item)
+    input("Заменить: ")
